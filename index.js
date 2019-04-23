@@ -9,7 +9,7 @@ const app = express();
     clientSecret: process.env.googleSecret,
     callbackURL: '/auth/google/callback'
   }, (a,r,profile,d) => {
-    console.log("hihihih",profile)
+    console.log("hhohohohoho",profile)
   }));
 
   app.get('/',(req,res)=>{
