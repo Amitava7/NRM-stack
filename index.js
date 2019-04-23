@@ -8,8 +8,8 @@ const app = express();
     clientID: process.env.googleClientID,
     clientSecret: process.env.googleSecret,
     callbackURL: '/auth/google/callback'
-  }, accessToken => {
-    console.log(accessToken);
+  }, (a,r,profile,d) => {
+    console.log("hihihih",profile)
   }));
 
   app.get('/',(req,res)=>{
@@ -19,6 +19,7 @@ const app = express();
   app.get('/auth/google', passport.authenticate('google',{
     scope: ['profile','email']
   }));
+  app.get('/auth/google/callback', passport.authenticate('google'));
 
   const PORT = process.env.PORT || 5000;
 
