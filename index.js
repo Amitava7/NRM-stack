@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
+
 mongoose.connect(process.env.mongoURI,{ useNewUrlParser: true});
 
 require('./models/user');
@@ -18,7 +19,6 @@ app.use(passport.session());
 require('./services/passport');
 
 require('./routes/authRoutes')(app);
-
 
 
   app.get('/',(req,res)=>{
