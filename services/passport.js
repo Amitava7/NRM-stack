@@ -17,10 +17,9 @@ passport.deserializeUser((id,done)=>{
   }, (a,r,profile,d) => {
     User.findOne({googleId: profile.id}).then(user=>{
       if(user){
-        d(null,user);
-      }else{
-        new User({ googleId : profile.id, name : profile.displayName.split(' ')[0]}).save().then(user=> d(null,user));
+        return d(null,user);
       }
+      new User({ googleId : profile.id, name : profile.displayName.split(' ')[0]}).save().then(user=> d(null,user));
     })
   }));
 
