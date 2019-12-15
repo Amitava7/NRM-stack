@@ -15,10 +15,10 @@ class App extends Component  {
   render(){
     return (
       <BrowserRouter>
-      <div>
-      <Header/>
-        <Route exact path='/' component={Dash}/>
-      </div>
+        <div>
+          <Header/>
+          <Route exact path='/' component={Dash}/>
+        </div>
       </BrowserRouter>
     );
   }
