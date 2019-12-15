@@ -14,6 +14,7 @@ app.use(cookieSession({
   keys: [process.env.cookieKey]
 }))
 
+app.use(express.static('public'))
 app.use(passport.initialize());
 app.use(passport.session());
 require('./services/passport');

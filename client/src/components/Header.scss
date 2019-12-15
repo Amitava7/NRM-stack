@@ -1,15 +1,41 @@
 body {
     background-color:#fff;
-    padding: 15px;
-    padding-top: 0px;
+    margin:0px;
+    font-family:sans-serif;
 }
 .header {
-  background-color: rgba(#3d3636, 0.27);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+
+}
+.name{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 24px
 }
 .logo{
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #F7F7F7;
+  height: 35px;
+  align-items: center;
+  font-size: 16px;
+  & a{
+    margin-right:20px;
+    color: black;
+  }
+}
+.login{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 10%;
+  cursor: pointer;
+  & img{
+    height:30px
+  }
 }

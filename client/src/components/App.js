@@ -3,8 +3,8 @@ import { BrowserRouter, Route} from 'react-router-dom'
 import { connect } from 'react-redux';
 import * as actions from '../Actions';
 import Header from './Header'
+import Dash from './Dash'
 
-const Dash = () => <h2>dash</h2>;
 const footer = () => <h2>foot</h2>;
 const side = () => <h2>side</h2>;
 class App extends Component  {
