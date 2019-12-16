@@ -1,0 +1,30 @@
+.about{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.text{
+  background: #E3F2F3;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pic{
+  background-image: url('/images/shelf.jpg');
+  width: 50%;
+
+  background-size: cover;
+}
+.heading{
+  margin-left: 20%;
+  margin-bottom:30px;
+  font-size: 40px;
+  font-weight: 100;
+}
+.desc{
+  margin-left: 20%;
+  width: 70%;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}

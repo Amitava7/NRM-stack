@@ -8,7 +8,7 @@ class Intro extends Component {
       <div class='bgpic'>
         <Typist>
           <span class='greeting'> Hi, This is Amitava! </span>
-          <span class='scroll'> Scroll down to exploer <Typist.Backspace count={3} delay={400} />re more </span>
+          <span class='scroll'> Scroll down to exploer <Typist.Backspace count={3} delay={400} />re more... </span>
         </Typist>
       </div>
     );

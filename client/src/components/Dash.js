@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import Intro from './Intro';
+import About from './About';
 
 class Dash extends Component {
 
@@ -7,6 +8,7 @@ class Dash extends Component {
     return (
       <>
       <Intro/>
+      <About/>
       </>
     );
  }
