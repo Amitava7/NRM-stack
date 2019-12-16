@@ -5,10 +5,10 @@ import Typist from 'react-typist';
 class Intro extends Component {
   render() {
     return(
-      <div class='bgpic'>
+      <div className='bgpic'>
         <Typist>
-          <span class='greeting'> Hi, This is Amitava! </span>
-          <span class='scroll'> Scroll down to exploer <Typist.Backspace count={3} delay={400} />re more... </span>
+          <span className='greeting'> Hi, This is Amitava! </span>
+          <span className='scroll'> Scroll down to exploer <Typist.Backspace count={3} delay={400} />re more... </span>
         </Typist>
       </div>
     );
