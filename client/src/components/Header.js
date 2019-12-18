@@ -13,7 +13,7 @@ class Header extends Component {
 
     return(
       <div className="header">
-        <div className="name">
+        <div className="page-name">
           Amitava Mozumder
         </div>
         <div className="navbar">

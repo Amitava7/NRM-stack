@@ -2,11 +2,22 @@ body {
     background-color:#fff;
     margin:0px;
     font-family:sans-serif;
+    font-weight: 100;
 }
-.header {
+.section-heading{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+.section-desc{
+  margin-top: 25px;
+  text-align: center;
+  font-size: 18;
+  font-weight: 100;
+}
 
-}
-.name{
+.page-name{
   height: 80px;
   text-align: center;
   line-height: 80px;
