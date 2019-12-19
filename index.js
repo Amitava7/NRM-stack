@@ -21,6 +21,7 @@ require('./services/passport');
 
 require('./routes/authRoutes')(app);
 
+app.get('/api/download',(req,res)=> res.download(path.resolve(__dirname,'client','public','Amitava-Resume.pdf')));
 
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static('client/build'));

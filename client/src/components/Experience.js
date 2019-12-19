@@ -6,7 +6,7 @@ class Experience extends Component {
     let jobs = this.props.jobs
     return(
       <>
-    <div className='section-heading'> MY EXPERIENCE
+    <div id='experience' className='section-heading'> MY EXPERIENCE
     </div>
     <div className='section-desc'> Position and Resposibilities
     </div>

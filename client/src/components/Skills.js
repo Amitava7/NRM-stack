@@ -9,7 +9,7 @@ class Skills extends Component {
     for(let i=0;i<3;i++){
       items.push(
         <>
-        <div className='skill ' style={{backgroundImage: `url(${pics[i]})`}}>
+        <div id='skills' className='skill ' style={{backgroundImage: `url(${pics[i]})`}}>
       </div>
       <div className='skill skill-text'>
         <div className='skill-heading'>

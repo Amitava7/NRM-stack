@@ -17,10 +17,12 @@ class Header extends Component {
           Amitava Mozumder
         </div>
         <div className="navbar">
-        <a href='/auth/google'> Home </a>
-        <a href='/auth/google'> About </a>
-        <a href='/auth/google'> Contact </a>
-        <a href='/auth/google'> Donate </a>
+        <a href='/#root'> Home </a>
+        <a href='/#about'> About </a>
+        <a href='/#experience'> Experience </a>
+        <a href='/#skills'> Skills </a>
+        <a href='/#contact'> Contact </a>
+        <a href='/api/download'> Download Resume</a>
         {loginComp}
         </div>
       </div>

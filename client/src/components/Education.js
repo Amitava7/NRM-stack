@@ -7,7 +7,7 @@ class Education extends Component {
       <>
       <div className='section-heading'>
       </div>
-      <div className='Education'>
+      <div id='education' className='Education'>
         <div className='text'>
           <div className='heading'>
             MY EDUCATION
