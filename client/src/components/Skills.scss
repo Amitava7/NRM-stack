@@ -1,0 +1,23 @@
+.skill{
+  height:300px;
+  background-size: cover;
+  width: 33%;
+}
+.skill-grid{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.skill-text{
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: #E3F2F3
+}
+.skill-heading{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.skill-desc{
+  letter-spacing: 1px;
+}

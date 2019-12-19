@@ -37,7 +37,7 @@ export const education = {
 }
 
 export const skills= [
-   'I\'ve mostly used ReactJs version 15 and 16 while developing Front-end but I also have expertise with Ember and Jquery. ',
-'I\'ve mostly used NodeJS in develping back-end APIs, but I\'ve also worked with Ruby On Rails and Java',
-'I\'ve worked with ElasticSearch, PostgreSQL, and MongoDb. Depending on the Usecase. '
+{'name':'FRONT-END', 'desc': 'I\'ve mostly used ReactJs version 15 and 16 while developing Front-end but I also have expertise with Ember and Jquery. '},
+{'name':'BACK-END', 'desc': 'I\'ve mostly used NodeJS in develping back-end APIs, but I\'ve also worked with Ruby On Rails and Java'},
+{'name':'DATABASE', 'desc': 'I\'ve worked with ElasticSearch, PostgreSQL, and MongoDb. Depending on the Usecase.'}
 ];
