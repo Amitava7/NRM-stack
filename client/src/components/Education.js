@@ -14,14 +14,18 @@ class Education extends Component {
           </div>
           <div className='desc'>
             {education.name}
+          </div>
+          <div className='desc'>
             {education.Course}
+          </div>
+          <div className='desc'>
             <ul>
             {education.projects.map((project)=>
               <li>{project}</li>
               )
             }
             </ul>
-          </div>
+          </div>  
         </div>
         <img src='/images/education.jpg' style={{width: '50%'}}/>
       </div>

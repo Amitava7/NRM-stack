@@ -3,17 +3,28 @@
   position: relative;
   max-width: 920px;
   width: 100%;
+  margin: 50px auto;
+}
+
+#conference-timeline .timeline-start{
+  background: #00b0bd;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  max-width: 10%;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
   margin: 0 auto;
 }
-#conference-timeline .timeline-start,
-#conference-timeline .timeline-end {
 
-      background: #00b0bd;
-      color: #1fb394;
-      max-width: 10%;
-      width: 100%;
-      height: 3px;
-      margin: 0 auto;
+#conference-timeline .timeline-end {
+  background: #00b0bd;
+  color: #1fb394;
+  max-width: 10%;
+  width: 100%;
+  height: 3px;
+  margin: 0 auto;
 }
 #conference-timeline .conference-center-line {
   position: absolute;
@@ -34,7 +45,10 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  margin: 20px 0;
+  margin: 20px 0 100px 0;
+}
+.article-number{
+  font-size: 30px;
 }
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
@@ -59,11 +73,10 @@
   padding: 27px 25px;
 }
 .timeline-article p {
-  margin: 0 0 0 60px;
   padding: 0;
-  font-weight: 400;
+  font-weight: 100;
   color: #242424;
-  font-size: 14px;
+  font-size: 23px;
   line-height: 24px;
   position: relative;
 }
@@ -117,7 +130,7 @@
   font-weight: 900;
 }
 .timeline-article .meta-date .date {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
 }
 .timeline-article .meta-date .month {

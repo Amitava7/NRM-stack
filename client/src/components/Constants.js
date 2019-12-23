@@ -37,7 +37,7 @@ export const education = {
 }
 
 export const skills= [
-{'name':'FRONT-END', 'desc': 'I\'ve mostly used ReactJs version 15 and 16 while developing Front-end but I also have expertise with Ember and Jquery. '},
-{'name':'BACK-END', 'desc': 'I\'ve mostly used NodeJS in develping back-end APIs, but I\'ve also worked with Ruby On Rails and Java'},
-{'name':'DATABASE', 'desc': 'I\'ve worked with ElasticSearch, PostgreSQL, and MongoDb. Depending on the Usecase.'}
+{'name':'FRONT-END', 'desc': 'I\'m proficient in ReactJs, Including React16. I\'ve worked in both valinna Javascript as well as TypeScript.   while developing Front-end I also have expertise with Ember.js and jQuery. '},
+{'name':'BACK-END', 'desc': 'I\'m well-versed in NodeJS when it comes to develping back-end APIs or Connecting to Databases. Along side with that I\'ve also worked with Ruby On Rails and Java'},
+{'name':'DATABASE', 'desc': 'I\'m congnizant ElasticSearch, PostgreSQL, and MongoDb. Have experience working with using all of them.'}
 ];
