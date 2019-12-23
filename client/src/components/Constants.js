@@ -19,7 +19,7 @@ export const jobs = [
     'resposibilities': [
       'Worked as a React developer to create a Quiz/poll creation tools that assists editors in creating and embedding dynamic interactive content on their web pages.',
       'Migrated all the APIs for above project from Java to NodeJs.',
-      'Developed a polling-based Live Blogging application to provide rolling coverage of an ongoing event on a website. With user account control and support for all external media and social networking links.',
+      'Developed a polling-based Live Blogging app to provide coverage of an live event on a website. With user account control and support for all external media and social networking links.',
       'Created a Ratings and Review tool to enable viewers of a particular article, to leave their rating and reviews on that article page. With support for content moderation.',
       'Captured and tracked user information and developed a tool for the editors to represent the analytics graphically and interact with them.'
     ]
