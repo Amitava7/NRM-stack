@@ -7,9 +7,9 @@ class Header extends Component {
     let loginComp;
     console.log ('this.props.auth',this.props.auth)
     if(!this.props.auth)
-      loginComp = <a className='login' href='/auth/google'> <img src='/images/google.png'/> Sign in </a>
+    loginComp = <a className='login' href='/auth/google'> <img src='/images/google.png'/> Sign in </a>
     else
-      loginComp = <a className='login' href='/api/logout' > Hi {this.props.auth.name} Logout </a>
+    loginComp = <a className='login' href='/api/logout' > Hi {this.props.auth.name} Logout </a>
 
     return(
       <div className="header">
@@ -17,12 +17,12 @@ class Header extends Component {
           Amitava Mozumder
         </div>
         <div className="navbar">
-        <a href='/#root'> Home </a>
-        <a href='/#about'> About </a>
-        <a href='/#experience'> Experience </a>
-        <a href='/#skills'> Skills </a>
-        <a href='/#contact'> Contact </a>
-        <a href='/api/download'> Download Resume</a>
+          <a onClick={() => this.props.scrollTo('home')}> Home </a>
+          <a onClick={() => this.props.scrollTo('about')}> About </a>
+          <a onClick={() => this.props.scrollTo('experience')}> Experience </a>
+          <a onClick={() => this.props.scrollTo('skills')}> Skills </a>
+          <a onClick={() => this.props.scrollTo('contact')}href='/#'> Contact </a>
+          <a href='/api/download'> Download Resume</a>
         {loginComp}
         </div>
       </div>
