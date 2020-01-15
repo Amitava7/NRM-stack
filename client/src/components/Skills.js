@@ -8,7 +8,7 @@ class Skills extends Component {
     let items = [];
     for(let i=0;i<3;i++){
       items.push(
-        <div key={i}>
+        <>
         <div id='skills' className='skill ' style={{backgroundImage: `url(${pics[i]})`}}>
       </div>
       <div className='skill skill-text'>
@@ -19,7 +19,7 @@ class Skills extends Component {
           {skills[i].desc}
         </div>
       </div>
-    </div>)
+    </>)
 }
     return(
       <>
