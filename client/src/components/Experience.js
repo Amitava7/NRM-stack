@@ -3,24 +3,23 @@ import './Experience.scss';
 
 class Experience extends Component {
   render() {
-    let jobs = this.props.jobs
     return(
       <>
     <div id='experience' className='section-heading'> MY EXPERIENCE
     </div>
     <section id="conference-timeline">
-      <div class="timeline-start">Present</div>
-      <div class="conference-center-line"></div>
-      <div class="conference-timeline-content">
-        <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="content-left">
-              <span class="article-number">Citrix R&D India </span>
+      <div className="timeline-start">Present</div>
+      <div className="conference-center-line"></div>
+      <div className="conference-timeline-content">
+        <div className="timeline-article">
+          <div className="content-left-container">
+            <div className="content-left">
+              <span className="article-number">Citrix R&D India </span>
               <p>Software Engineer 2 </p>
             </div>
           </div>
-          <div class="content-right-container">
-            <div class="content-right">
+          <div className="content-right-container">
+            <div className="content-right">
               <ul>
                 <li>Worked as a full-stack developer in Rightsignature: a web and mobile e-signature service.Go-to choice for thousands of SMB and Large Enterprise accounts.</li>
                 <li>Worked between two versions of the product.Facilitating the migrations of users between them.</li>
@@ -31,20 +30,20 @@ class Experience extends Component {
               </ul>
             </div>
           </div>
-          <div class="meta-date">
-            <span class="date">Jul</span>
-            <span class="month">2018</span>
+          <div className="meta-date">
+            <span className="date">Jul</span>
+            <span className="month">2018</span>
           </div>
         </div>
-        <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="content-left">
-              <span class="article-number">Time Inc (Meredith Corp)</span>
+        <div className="timeline-article">
+          <div className="content-left-container">
+            <div className="content-left">
+              <span className="article-number">Time Inc (Meredith Corp)</span>
               <p>Software Development Engineer 1 </p>
             </div>
           </div>
-          <div class="content-right-container">
-            <div class="content-right">
+          <div className="content-right-container">
+            <div className="content-right">
               <ul>
                 <li>Worked as a React developer to create a Quiz/poll creation tools that assists editors in creating and embedding dynamic interactive content on their web pages.</li>
                 <li>Migrated all the APIs for above project from Java to NodeJs.</li>
@@ -54,13 +53,13 @@ class Experience extends Component {
               </ul>
             </div>
           </div>
-          <div class="meta-date">
-            <span class="date">Jun</span>
-            <span class="month">2016</span>
+          <div className="meta-date">
+            <span className="date">Jun</span>
+            <span className="month">2016</span>
           </div>
         </div>
       </div>
-      <div class="timeline-end"></div>
+      <div className="timeline-end"></div>
     </section>
     </>
     );

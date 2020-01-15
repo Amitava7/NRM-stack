@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Element, scroller } from 'react-scroll'
+import Title from './Title';
 import Header from './Header'
 import Intro from './Intro';
 import About from './About';
@@ -28,6 +29,7 @@ class Dash extends Component {
   render() {
     return (
       <>
+      <Title/>
       <Header scrollTo={this.scrollTo}/>
       <Element name="home">
         <Intro/>

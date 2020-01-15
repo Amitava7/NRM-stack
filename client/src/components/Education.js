@@ -20,14 +20,14 @@ class Education extends Component {
           </div>
           <div className='desc'>
             <ul>
-            {education.projects.map((project)=>
-              <li>{project}</li>
+            {education.projects.map((project,i)=>
+              <li key={i}>{project}</li>
               )
             }
             </ul>
-          </div>  
+          </div>
         </div>
-        <img src='/images/education.jpg' style={{width: '50%'}}/>
+        <img alt='background pic' src='/images/education.jpg' style={{width: '50%'}}/>
       </div>
       </>
     );

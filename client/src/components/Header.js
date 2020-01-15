@@ -13,9 +13,6 @@ class Header extends Component {
 
     return(
       <div className="header">
-        <div className="page-name">
-          Amitava Mozumder
-        </div>
         <div className="navbar">
           <a onClick={() => this.props.scrollTo('home')}> Home </a>
           <a onClick={() => this.props.scrollTo('about')}> About </a>
