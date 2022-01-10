@@ -4,7 +4,7 @@ const passport = require('passport');
 const cookieSession = require('cookie-session');
 const path = require('path');
 
-//mongoose.connect(process.env.mongoURI,{ useNewUrlParser: true});
+mongoose.connect(process.env.mongoURI,{ useNewUrlParser: true});
 
 require('./models/user');
 
