@@ -12,8 +12,9 @@ import {about,jobs,education,skills} from './Constants.js'
 
 import './Dash.scss'
 const Quote =() => <div className='quote-section'>
-<div className='section-desc'> Choose a job you love and you will never have to work a day in your life </div>
-<div className='section-desc'> - Confucius</div>
+   <blockquote class="sidekick">
+   Choose a job you love and you will never have to work a day in your life. <cite>  Confucius</cite>
+  </blockquote>
 </div>
 
 

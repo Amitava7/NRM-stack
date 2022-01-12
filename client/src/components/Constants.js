@@ -1,6 +1,17 @@
 export const about = '';
 
 export const jobs = [
+  {'name' : 'Time Inc (Meredith Corporation)',
+  'position' : 'Software Development Engineer - 1',
+  'timePeriod': 'Jun/2016 - Jun/2018',
+  'resposibilities': [
+    'Worked as a React developer to create a Quiz/poll creation tools that assists editors in creating and embedding dynamic interactive content on their web pages.',
+    'Migrated all the APIs for above project from Java to NodeJs.',
+    'Developed a polling-based Live Blogging app to provide coverage of an live event on a website. With user account control and support for all external media and social networking links.',
+    'Created a Ratings and Review tool to enable viewers of a particular article, to leave their rating and reviews on that article page. With support for content moderation.',
+    'Captured and tracked user information and developed a tool for the editors to represent the analytics graphically and interact with them.'
+  ]
+},
   {'name' : 'Citrix R&D India',
     'position' : 'Software Engineer 2',
     'timePeriod': 'Jun/2018 - Present',
@@ -12,18 +23,17 @@ export const jobs = [
       'Integrated the product with other in house SAAS products for seamless workspace experience.',
       'Worked in custom workflow allows users to create customized workflows that include multiple triggers and actions.'
     ]
-  },
-  {'name' : 'Time Inc (Meredith Corporation)',
-    'position' : 'Software Development Engineer - 1',
-    'timePeriod': 'Jun/2016 - Jun/2018',
-    'resposibilities': [
-      'Worked as a React developer to create a Quiz/poll creation tools that assists editors in creating and embedding dynamic interactive content on their web pages.',
-      'Migrated all the APIs for above project from Java to NodeJs.',
-      'Developed a polling-based Live Blogging app to provide coverage of an live event on a website. With user account control and support for all external media and social networking links.',
-      'Created a Ratings and Review tool to enable viewers of a particular article, to leave their rating and reviews on that article page. With support for content moderation.',
-      'Captured and tracked user information and developed a tool for the editors to represent the analytics graphically and interact with them.'
-    ]
-  }
+  },  
+  {'name' : 'PayPal',
+  'position' : 'Software Engineer 2',
+  'timePeriod': 'Jun/2016 - Jun/2018',
+  'resposibilities': [
+    'Worked as a full-stack developer in internal web tools, supporting customer service agents.',
+    'Worked in tandem with the Data Science team to integrate NLP models with microservices.',
+    'Created a generalized data orchestration service for in-house products.',
+    'Implemented instrumentation to provide business metrics to management.',
+  ]
+},
 ];
 
 export const education = {
