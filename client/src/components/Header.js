@@ -5,7 +5,6 @@ class Header extends Component {
 
   render() {
     let loginComp;
-    console.log ('this.props.auth',this.props.auth)
     if(!this.props.auth)
     loginComp = <a className='login' href='/auth/google'> <img src='/images/google.png'/> Sign in </a>
     else
