@@ -8,7 +8,7 @@ class Header extends Component {
     if(!this.props.auth)
     loginComp = <a className='login' href='/auth/google'> <img src='/images/google.png'/> Sign in </a>
     else
-    loginComp = <a className='login' href='/api/logout' > Hi {this.props.auth.name} Logout </a>
+    loginComp = <><a className='login' href='/api/logout' > Hi {this.props.auth.name},  Logout </a> </>
 
     return(
       <div className="header">

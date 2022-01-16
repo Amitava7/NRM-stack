@@ -1,6 +1,14 @@
 .quote-section{
   margin-top:100px;
 }
+.altr{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sidekick {
   position: relative;
   padding-left: 1em;
