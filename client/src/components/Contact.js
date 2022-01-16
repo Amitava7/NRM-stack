@@ -8,7 +8,7 @@ class Contact extends Component {
       <div className='section-heading'> LET'S CONNECT
       </div>
       <div className='mail'>
-        <div className='mail-address'><a href="mailto:amitavamozumder@gmail.com">amitavamozumder@gmail.com</a>
+        <div className='mail-address'><a href="mailto:connect@amitava.info">connect@amitava.info</a>
         </div>
       </div>
     </div>
