@@ -5,7 +5,7 @@ module.exports = app => {
     scope: ['profile','email']
   }));
   app.get('/auth/google/callback', passport.authenticate('google'),(req,res)=>  { console.log("########"); res.redirect('/')});
-  app.get('/api/current_user', (req,res)=>res.send(req.user));
+  app.get('/api/current_user', (req,res)=>res.send(req.user ? req.user.name : ""));
   app.get('/api/logout', (req,res)=> {
     var name = req.user.name;
     req.logout();

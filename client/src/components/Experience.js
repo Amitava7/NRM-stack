@@ -32,7 +32,7 @@ class Experience extends Component {
             <div className='desg'>{this.props.jobs[this.state.value].position}</div>
             <ul>
                {
-                  this.props.jobs[this.state.value].resposibilities.map(e=> <li>{e}</li>)
+                  this.props.jobs[this.state.value].responsibilities.map((e,i)=> <li key={"skills"+i}>{e}</li>)
                }
              
             </ul>

@@ -7,7 +7,9 @@ const path = require('path');
 mongoose.connect(process.env.mongoURI,{ useNewUrlParser: true});
 
 require('./models/user');
+require('./models/visitor');
 
+const Visitor = mongoose.model('visitors');
 const app = express();
 
 app.use(cookieSession({
@@ -22,6 +24,16 @@ require('./services/passport');
 require('./routes/authRoutes')(app);
 
 app.get('/api/download',(req,res)=> res.download(path.resolve(__dirname,'client','public','Amitava-Resume.pdf')));
+
+app.get('/api/visitor', (req,res)=> {
+  Visitor.findOne({ip: req.ip}).then(visitor=>{
+    if(visitor){
+      return; 
+    }
+    new Visitor({ ip : req.ip, time : (new Date()).toString() }).save();
+  })
+  res.send("Hello")
+})
 
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static('client/build'));

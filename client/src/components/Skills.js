@@ -9,13 +9,13 @@ class Skills extends Component {
     for(let i=0;i<3;i++){
       items.push(
         <>
-        <div id='skills' className='skill ' style={{backgroundImage: `url(${pics[i]})`}}>
+        <div key={i+"div"} id='skills' className='skill ' style={{backgroundImage: `url(${pics[i]})`}}>
       </div>
       <div className='skill skill-text'>
-        <div className='skill-heading'>
+        <div key={i+"name"} className='skill-heading'>
           {skills[i].name}
         </div>
-        <div className='skill-desc'>
+        <div key={i+"desc"} className='skill-desc'>
           {skills[i].desc}
         </div>
       </div>
@@ -23,11 +23,11 @@ class Skills extends Component {
 }
     return(
       <>
-      <div className='section-heading'> MY SKILLS
+      <div key="skill-a" className='section-heading'> MY SKILLS
       </div>
-      <div className='section-desc'> What I do
+      <div key="skill-b" className='section-desc'> What I do
       </div>
-      <div className='skill-grid'>
+      <div key="skill-c" className='skill-grid'>
         {items}
       </div>
       </>
