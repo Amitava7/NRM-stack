@@ -1,31 +1,5 @@
 .bgpic{
-  height: 600px;
+  height: 100vh;
   background-image: url('/images/desk.jpg');
   background-size: cover;
-}
-.Typist {
-  font-size: 40px;
-  height: 100%;
-  position: relative;
-}
-.greeting{
-  position: absolute;
-  margin-left: 50%;
-  margin-top: 14%;
-}
-.scroll{
-  position: absolute;
-  margin-left: 50%;
-  margin-top: 27%;
-  font-size: 30px;
-}
-.Cursor--blinking{
-  animation-name: example;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  from {color: black;}
-  to {color: transparent;}
 }

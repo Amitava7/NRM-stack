@@ -7,7 +7,6 @@ body {
 .header{
   position: fixed;
   width: 100%;
-  top: 70px;
   z-index: 500; 
 }
 .section-heading{
@@ -37,11 +36,9 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  background: #F7F7F7;
   height: 35px;
   align-items: center;
   font-size: 16px;
-  box-shadow: 0px 1px 10px -5px #999;
   & a{
     margin-right:20px;
     color: black;

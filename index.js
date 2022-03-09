@@ -8,10 +8,13 @@ mongoose.connect(process.env.mongoURI,{ useNewUrlParser: true});
 
 require('./models/user');
 require('./models/visitor');
+require('./models/message');
 
 const Visitor = mongoose.model('visitors');
-const app = express();
+const Message = mongoose.model('message');
 
+const app = express();
+app.use(express.json())
 app.use(cookieSession({
   maxAge: 30*24*3600*1000,
   keys: [process.env.cookieKey]
@@ -32,6 +35,11 @@ app.get('/api/visitor', (req,res)=> {
     }
     new Visitor({ ip : req.ip, time : (new Date()).toString() }).save();
   })
+  res.send("Hello")
+})
+
+app.post('/api/message', (req,res)=> {
+  new Message({ mail : req.body.mail, message: req.body.msg, time : (new Date()).toString() }).save();
   res.send("Hello")
 })
 

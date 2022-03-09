@@ -13,9 +13,8 @@ passport.deserializeUser((id,done)=>{
   passport.use(new GoogleStrategy({
     clientID: process.env.googleClientID,
     clientSecret: process.env.googleSecret,
-    callbackURL: 'https://amitava.info/auth/google/callback'
+    callbackURL: '/auth/google/callback'
   }, (a,r,profile,d) => {
-    console.log("called #########", JSON.stringify(profile))
     User.findOne({googleId: profile.id}).then(user=>{
       if(user){
         return d(null,user);
