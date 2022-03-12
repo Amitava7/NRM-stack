@@ -1,38 +1,31 @@
-import React,{ Component } from 'react';
+import React,{ forwardRef } from 'react';
 import './Skills.scss'
 
-class Skills extends Component {
-  render() {
-    let {skills} = this.props;
-    let pics =['/images/skill1.jpg','/images/skill2.jpg','/images/skill3.jpg'];
-    let items = [];
-    for(let i=0;i<3;i++){
-      items.push(
-        <>
-        <div key={i+"div"} id='skills' className='skill ' style={{backgroundImage: `url(${pics[i]})`}}>
-      </div>
-      <div className='skill skill-text'>
-        <div key={i+"name"} className='skill-heading'>
-          {skills[i].name}
-        </div>
-        <div key={i+"desc"} className='skill-desc'>
-          {skills[i].desc}
-        </div>
-      </div>
-    </>)
-}
+const Skills = forwardRef( ({skills}, ref) =>{ 
     return(
       <>
-      <div key="skill-a" className='section-heading'> MY SKILLS
+      <div ref={ref} key="skill-a" className='section-heading'> MY SKILLS
       </div>
       <div key="skill-b" className='section-desc'> What I do
       </div>
       <div key="skill-c" className='skill-grid'>
-        {items}
+        {skills.map((skill,i) => (
+                  <>
+                  <div key={i+"div"} id='skills' className='skill ' style={{backgroundImage: `url(${skill.pic})`}}>
+                </div>
+                <div className='skill skill-text'>
+                  <div key={i+"name"} className='skill-heading'>
+                    {skill.name}
+                  </div>
+                  <div key={i+"desc"} className='skill-desc'>
+                    {skill.desc}
+                  </div>
+                </div>
+              </>
+        ))}
       </div>
       </>
     );
-  }
-}
+  })
 
-export default Skills;
+export default React.memo(Skills);

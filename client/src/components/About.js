@@ -1,10 +1,9 @@
-import React,{ Component } from 'react';
+import React,{ forwardRef} from 'react';
 import './About.scss'
 
-class About extends Component {
-  render() {
+const About = forwardRef((props, ref) => {
     return(
-      <div id='about' className='about'>
+      <div id='about' className='about' ref={ref}>
       <div className='text'>
         <div className='heading'>
           ABOUT
@@ -16,7 +15,6 @@ class About extends Component {
       <div className='pic' ></div>
       </div>
     );
-  }
-}
+  });
 
 export default About;

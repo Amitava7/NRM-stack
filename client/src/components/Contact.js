@@ -1,7 +1,7 @@
-import React,{ useState } from 'react';
+import React,{ useState, forwardRef } from 'react';
 import './Contact.scss';
 
-const Contact = props => {
+const Contact = forwardRef ((props, ref) => {
   const [mail, setMail] = useState("");
   const [msg, setMsg] = useState("");
   const handleChange = e =>{
@@ -23,13 +23,13 @@ const Contact = props => {
     }).catch(console.error);
   }
 return(
-      <div id='contact' className='contact'>
+      <div ref={ref} id='contact' className='contact'>
       <div className='chair'></div>
       <div className='connect'>
       <div className='social'>
-        <img alt="linkedin" src="/images/linkin.png"/>
-        or 
-        <a href="mailto:connect@amitava.info">connect@amitava.info</a>
+      <a href="https://www.linkedin.com/in/amitava-mozumder/" target="_blank" rel="noopener noreferrer"><img alt="linkedin" title= "LinkedIn" src="/images/linkin.png"/></a>
+        <a href="mailto:connect@amitava.info"><img alt="gmail"  title= "Gmail" src="/images/gmail.png"/></a>
+        <a href="mailto:connect@amitava.info"><img alt="mymail" title= "Private mail" src="/images/mymail.png"/></a>
       </div> 
       <div class="form__group field">
           <input type="input" class="form__field" placeholder="mail" name="mail" id='mail' required onChange={handleChange} value={mail}/>
@@ -47,6 +47,6 @@ return(
       </div>
       </div>
     );
-}
+})
 
 export default Contact ;

@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 const path = require('path');
+const helmet = require("helmet");
+const rateLimit = require('express-rate-limit')
 
 mongoose.connect(process.env.mongoURI,{ useNewUrlParser: true});
 
@@ -22,6 +24,15 @@ app.use(cookieSession({
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(helmet());
+const limiter = rateLimit({
+	windowMs: 15 * 60 * 1000, // 15 minutes
+	max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+})
+app.use(limiter)
 require('./services/passport');
 
 require('./routes/authRoutes')(app);

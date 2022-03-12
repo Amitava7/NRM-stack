@@ -1,11 +1,9 @@
-import React,{ Component } from 'react';
+import React,{ forwardRef } from 'react';
 import './Education.scss'
-class Education extends Component {
-  render() {
-    let {education}= this.props;
-    return(
+const Education = (forwardRef(({education},ref) => 
+    (
       <>
-      <div className='section-heading'>
+      <div ref={ref} className='section-heading'>
       </div>
       <div id='education' className='Education'>
         <div className='text'>
@@ -30,8 +28,5 @@ class Education extends Component {
         <img alt='background pic' src='/images/education.jpg' style={{width: '50%'}}/>
       </div>
       </>
-    );
-  }
-}
-
-export default Education;
+    )));
+export default React.memo(Education);

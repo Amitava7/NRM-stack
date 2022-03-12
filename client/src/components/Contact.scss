@@ -5,6 +5,16 @@
   background: #E3F2F3;
   display: flex;
 }
+.social{
+  height: 30%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    height: 70px;
+  }
+}
 .chair{
   background-image: url(/images/connect.png);
   background-size: cover;
