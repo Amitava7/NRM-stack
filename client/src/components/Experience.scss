@@ -1,6 +1,3 @@
-.jobs{
-   height: 100vh;
-}
 .exp-timeline{
    li.button-back , li.button-forward {
       display: none;
@@ -40,9 +37,23 @@
 .jobs{
    padding: 20px;
     background: #f7f7f7;
-    height: 100vh;
+    height: fit-content;
     .section-heading{
        margin-top:50px;
        margin-bottom: 50px;
     }
+}
+
+.vertical-timeline-element-content{
+   span{
+      color: #000000;
+      font-weight: 600 !important;
+      font-size: 20px !important;
+   }
+   h4{
+      margin-top: 5px;
+   }
+   li{
+      margin-top: 5px;
+   }
 }
