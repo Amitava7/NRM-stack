@@ -57,7 +57,10 @@ export const education = {
 }
 
 export const skills = [
-  { 'name': 'FRONT-END', 'desc': 'I\'m proficient in ReactJs, Including React16. I\'ve worked in both vanilla Javascript as well as TypeScript.   while developing Front-end I also have expertise with Ember.js and jQuery.', 'pic': '/images/skill1.jpg' },
-  { 'name': 'BACK-END', 'desc': 'I\'m well-versed in NodeJS when it comes to developing back-end APIs or Connecting to Databases. Along side with that I\'ve also worked with Ruby On Rails and Java', 'pic': '/images/skill2.jpg' },
-  { 'name': 'DATABASE', 'desc': 'I\'m cognizant of ElasticSearch, PostgreSQL, and MongoDb. Have experience working with using all of them.', 'pic': '/images/skill3.jpg' }
+  { 'type': 'text', 'name': 'FRONT-END', 'desc': 'I\'m proficient in ReactJs, Including React16. I\'ve worked in both vanilla Javascript as well as TypeScript.   while developing Front-end I also have expertise with Ember.js and jQuery.'},
+  { 'type': 'pic', 'pic': '/images/skill1.jpg' },
+  { 'type': 'text','name': 'BACK-END', 'desc': 'I\'m well-versed in NodeJS when it comes to developing back-end APIs or Connecting to Databases. Along side with that I\'ve also worked with Ruby On Rails and Java'},
+  { 'type': 'pic', 'pic': '/images/skill2.jpg' },
+  { 'type': 'text', 'name': 'DATABASE', 'desc': 'I\'m cognizant of ElasticSearch, PostgreSQL, and MongoDb. Have experience working with using all of them.'},
+  { 'type': 'pic', 'pic': '/images/skill3.jpg' },
 ];

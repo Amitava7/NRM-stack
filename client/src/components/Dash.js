@@ -2,13 +2,8 @@ import React, { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import Header from './Header'
 import Intro from './Intro';
 import { about, jobs, skills } from './Constants.js'
-
 import './Dash.scss'
-const Quote = () => <div className='quote-section'>
-  <blockquote className="sidekick">
-    Choose a job you love and you will never have to work a day in your life. <cite>  Confucius</cite>
-  </blockquote>
-</div>
+
 const About = lazy(() => import("./About"));
 const Experience = lazy(() => import("./Experience"));
 const Contact = lazy(() => import("./Contact"));
