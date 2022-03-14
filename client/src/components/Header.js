@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 class Header extends Component {
 
   render() {
-    console.log("heyy", this.props.active);
     let loginComp;
     let { active, auth } = this.props;
       if(!auth){

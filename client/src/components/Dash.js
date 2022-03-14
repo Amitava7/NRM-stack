@@ -53,7 +53,7 @@ const Dash = props => {
   };
 
   useEffect(() => {
-    fetch("/api/visitor").then(r => console.log("api", r)).catch(console.error);
+    fetch("/api/visitor").catch(console.error);
   }, [])
 
   useEffect(() => {
