@@ -17,6 +17,9 @@ const Dash = props => {
   const skillRef = useRef();
   const contactRef = useRef();
   const [active, setActive] = useState("intro");
+  let obs = new IntersectionObserver((entries) => {
+    entries.forEach(e=> e.isIntersecting? setActive(e.target.dataset['name']) : null)
+  }, { threshold: 0.1 })
   const scrollTo = (num) => {
     let ref;
     switch (num) {
@@ -52,15 +55,12 @@ const Dash = props => {
   }, [])
 
   useEffect(() => {
-    let obs = new IntersectionObserver((entries) => {
-      entries.forEach(e=> e.isIntersecting? setActive(e.target.dataset['name']) : null)
-    }, { threshold: 0.5 })
     if (homeRef.current) obs.observe(homeRef.current);
     if (aboutRef.current) obs.observe(aboutRef.current);
     if (expRef.current) obs.observe(expRef.current);
     if (skillRef.current) obs.observe(skillRef.current);
     if (contactRef.current) obs.observe(contactRef.current);
-  }, [homeRef, aboutRef, expRef, skillRef, contactRef])
+  }, [homeRef, aboutRef, expRef, skillRef, contactRef, obs])
   const isMobile = mobileCheck();
 
   return (
@@ -68,12 +68,12 @@ const Dash = props => {
       {isMobile ? <div className='altr'> Please use a computer to experience the site. </div> :
         <>
           <Header scrollTo={scrollTo} active={active}/>
-          <div ref={homeRef} data-name="intro"> <Intro ref={homeRef} /> </div>
+          <div ref={homeRef} data-name="intro"> <Intro /> </div>
           <Suspense fallback={<h1 style={{ width: "100%" }}>Still Loading…</h1>}>
-            <div ref={aboutRef} data-name="about"> <About about={about} ref={aboutRef} /></div>
-            <div ref={expRef} data-name="exp"> <Experience ref={expRef} jobs={jobs} /> </div>
-            <div ref={skillRef} data-name="skill"> <Skills ref={skillRef} skills={skills} /> </div>
-            <div ref={contactRef} data-name="contact"> <Contact ref={contactRef} /> </div>
+            <div ref={aboutRef} data-name="about"> <About about={about} /></div>
+            <div ref={expRef} data-name="exp"> <Experience jobs={jobs} /> </div>
+            <div ref={skillRef} data-name="skill"> <Skills  skills={skills} /> </div>
+            <div ref={contactRef} data-name="contact"> <Contact  /> </div>
           </Suspense>
         </>
       }
