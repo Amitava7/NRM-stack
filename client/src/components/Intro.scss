@@ -2,4 +2,12 @@
   height: 100vh;
   background-image: url('/images/desk.jpg');
   background-size: cover;
+  position: relative;
+  p{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 }

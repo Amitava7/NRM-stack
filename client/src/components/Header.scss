@@ -42,7 +42,6 @@ body {
   & a{
     margin-right:20px;
     color: black;
-    transition: all 1s;
     text-decoration: none;
     cursor: pointer;
     &:hover{
@@ -65,7 +64,7 @@ body {
   background: #91aea9;
   box-shadow: 0px 2px #c7c6c6;
   height: 45px;
-  transition: all 1s;
+  transition: all .1s;
 }
 
 .active-item{

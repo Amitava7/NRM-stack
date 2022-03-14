@@ -104,7 +104,9 @@ const Intro = props =>{
  },[])
    return (
    <div className="bgpic">
-     <canvas ref={myref1}></canvas>
+     <canvas ref={myref1}>
+     </canvas>
+     <p>Full stack developer</p>
    </div>
    );
 }
