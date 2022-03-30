@@ -37,7 +37,7 @@ require('./services/passport');
 
 require('./routes/authRoutes')(app);
 
-app.get('/api/download',(req,res)=> res.download(path.resolve(__dirname,'client','public','Amitava-Resume.pdf')));
+app.get('/api/download',(req,res)=> res.download(path.resolve(__dirname,'client','public','Amitava_Resume.pdf')));
 
 app.get('/api/visitor', (req,res)=> {
   Visitor.findOne({ip: req.ip}).then(visitor=>{
